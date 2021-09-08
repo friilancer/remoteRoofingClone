@@ -24,29 +24,9 @@ const CurrentLocation = () => {
         console.log('clicked')
     }
 
-	/*useEffect(() => {
-		const locationCheck = () => {
-			if (typeof(userLocationState.place_id) !== 'string' || userLocationState.place_id.length < 3 ){
-				setIsOpen(true);
-			}
-		}
-		locationCheck();
-	}, [userLocationState.place_id])
-	useEffect(() => {
-		const verifyLocation = () => {
-			if(userAddress.place_id !== '' && userAddress.formatted_address !== ''){
-				setIsOpen(isOpen => !isOpen)
-				userLocationDispatch({type:'setLocation' , payload : userAddress})
-			}
-
-		}
-
-		verifyLocation()
-	}, [userAddress.place_id, userAddress.formatted_address])*/
-
 	return (
 		<>
-			<div className="input-group p-5 mb-10">
+			<div className="input-group p-5">
                 <img className="input-group-icon" src={LocationIcon} alt="" />
 				<LocationInput
 				 id="user_currentLocation" 
