@@ -1,0 +1,56 @@
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 22px 0;
+    margin: 0 5px;
+}
+
+.card-item{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.card-item .fa,
+.card-item .far,
+.card-item .fas{
+    font-size: 1.6rem;
+}
+
+.jumbotron{
+    padding-bottom: 50px;
+}
+
+
+@media screen and (min-width: 400px) {
+    .card--pushed-up{
+        position: relative;
+        bottom: 40px;
+    }
+    
+}
+
+@media screen and (min-width: 750px) {
+    .jumbotron{
+        padding-bottom: 70px;
+    }
+}
+@media screen and (max-width : 400px) {
+    .card{
+        display: grid;
+        justify-items: center;
+        margin: 0;
+    }
+
+    .card-item{
+        display: grid;
+        justify-items: center;
+        column-gap: 0;
+        row-gap: 4px;
+        padding: 5px 0;
+        margin: 7px 0;
+    }
+    
+}
